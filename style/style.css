@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+}
+
+.container {
+  position: relative;
+  padding: 30px;
+  margin: 10px 30px;
+  user-select: none;
+}
+.container > div:first-of-type {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.container > div:first-of-type > span:first-of-type {
+  position: absolute;
+  color: white;
+  background-color: rgba(57, 50, 50, 0.6);
+  padding: 5px;
+  margin: 8px;
+  line-height: 20px;
+}
+.container > div:first-of-type img {
+  width: 100%;
+  height: 200px;
+}
+.container > div:first-of-type > span {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  width: 100px;
+  height: 34px;
+  margin: 7px 0;
+  line-height: 34px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  cursor: pointer;
+}
+.container > div:first-of-type > span:nth-of-type(2) {
+  float: left;
+}
+.container > div:first-of-type > span:nth-of-type(3) {
+  float: right;
+}
+.container .dontClick {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 30px 0px;
+  }
+  .container > div:first-of-type {
+    width: 100%;
+  }
+}
+
+.bullits {
+  width: calc(100% - 200px - 20px);
+  position: absolute;
+  left: 21%;
+  margin: 6px 0;
+  text-align: center;
+  padding: 9px;
+}
+.bullits span {
+  background-color: #e3e0e0;
+  color: var(--main-color);
+  padding: 10px;
+  margin: -2px;
+  cursor: pointer;
+}
+.bullits span.active {
+  background-color: var(--main-color);
+  color: white;
+}
+@media (max-width: 767px) {
+  .bullits {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+  }
+  .bullits span {
+    padding: 10px 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
